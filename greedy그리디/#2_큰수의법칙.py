@@ -5,18 +5,3 @@
 n, m, k = map(int,input().split())
 data = list(map(int,input().split()))
 
-data.sort(reverse=True)
-first = data[0]
-second = data[1]
-
-answer = 0
-
-while m!=0 :
-    for i in range(k) :
-        answer += first
-        m -= 1
-
-    answer += second
-    m -= 1
-
-print(answer)
