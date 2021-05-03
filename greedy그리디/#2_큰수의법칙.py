@@ -7,7 +7,7 @@ data = list(map(int, input().split()))
 ans = 0
 kcount = 0
 
-data.sort(reverse=True) #data.sort() : 원본바뀜 / sprt(data, ) : 원본안바뀜
+data.sort(reverse=True) #data.sort() : 원본바뀜 / sort(data, ) : 원본안바뀜
 while M!=0:
   if kcount < K: # <= 로 해서 틀림
     ans += data[0]
