@@ -13,8 +13,8 @@ while M!=0:
     ans += data[0]
     kcount += 1
   else:
-    if data[1]!=data[0]:
-      ans += data[1]
+    if data[1]!=data[0]: # 만약 2번째로 큰수가 젤큰수와 같으면, 그냥 끝나고 다시 위에 if 문으로.
+      ans += data[1]        # !그럴필요 없이 두번째 큰 수는 무조건 1번 더하고, 다시 젤큰수 K번 더하는 것으로 가도됨.(조건문 1개 세이브)
     kcount = 0
   M -= 1
     
