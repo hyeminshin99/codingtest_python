@@ -1,4 +1,4 @@
-# dp 접근단계 예시
+# DP 접근단계 예시
 
 ##   1단계 : 재귀함수
 ```python
@@ -22,3 +22,16 @@ def fibo(x):
     return d[x]
 ```
 print(fibo(99))
+***
+##   3단계 : 보텀업
+```python
+d = [0] * 100
+
+d[1] = 1
+d[2] = 1
+# n = 받고
+
+for i in range(3, n+1):    # 보텀업 (단순 반복문)
+    d[i] = d[i-1] + d[i-2]
+```
+print(d[n])
