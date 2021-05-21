@@ -1,3 +1,4 @@
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=mini9974)](https://solved.ac/mini9974/)
 # codingtest
 # 2021-1 coding test 준비_python
 ## 참고서적 <이것이 코딩테스트다>
