@@ -12,6 +12,16 @@ print('A' if True else 'B')
       # 2번 for 문     # 1번 for문
 
 # for,if-else가 함께 쓰일 경우, if 문을 for문 보다 앞에 적는다
-[i if i> 1 else 0 for i in list1]
+[i if i>1 else 0 for i in list1]
 # 만약 else 가 없다면, if 문은 맨 마지막 위치에 적는다
 [i for i in list1 if i>1]
+
+
+# 제곱, 제곱수, 파이
+import math
+
+print(5**2) #25
+pow(a,b) #a의 b제곱을 계산해서, 반환하는 함수
+
+math.sqrt(4) # 2.0
+math.pi #3.1415926535897931
