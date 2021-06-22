@@ -24,7 +24,7 @@ def dfs(graph, v, visited):
     visited[v] = True
     print(v, end=' ')
 
-    for i in graph[v]:
+    for i in graph[v]: ##v노드에 연결되있는 노드들
         if not visited[i]:
             dfs(graph, i, visited) #재귀
 
@@ -32,4 +32,23 @@ visited = [False]*N
 dfs(graph, 1, visited)
 ```
 ## BFS(넒이우선탐색) - queue
-> 가장 가까운 노드먼저 감
+> 가장 가까운 노드먼저 
+```python
+from collections import deque #큐사용(리스트)
+
+def bfs(graph, start, visited):
+    Q = deque([start])
+    visited[start] = True
+
+    while Q: #Q에 아무것도 없을때까지
+        v = Q.popleft() #노드뽑기pop
+        print(v, end=' ')
+
+        for i in graph[v]: ##v노드에 연결되있는 노드들
+            if not visited[i]:
+                Q.append(i) #노드넣기push
+                visited[i] = True
+
+visited = [False]*N
+bfs(graph, 1, visited)
+```
