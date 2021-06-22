@@ -31,7 +31,7 @@ def dfs(graph, v, visited):
 visited = [False]*N
 dfs(graph, 1, visited)
 ```
-## BFS(넒이우선탐색) - queue
+## BFS(넒이우선탐색) - queue-큐자료구조deque()
 > 가장 가까운 노드먼저 
 ```python
 from collections import deque #큐사용(리스트)
