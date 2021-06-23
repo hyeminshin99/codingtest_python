@@ -25,3 +25,17 @@ pow(a,b) #a의 b제곱을 계산해서, 반환하는 함수
 
 math.sqrt(4) # 2.0
 math.pi #3.1415926535897931
+
+
+##### 튜플dict - key, value / items() ##########
+# value값으로 key찾기
+# 1. dict 뒤집기
+my_dict={2:200 , 3:300}
+new_dict = dict(map(reversed, my_dict.items()))
+print(new_dict) #{200:2 , 300:3}
+print(new_dict[300]) #3
+
+# 2. for문 활용
+for key, value in my_dict.items():
+      if value == 300:
+            print(key) #3
