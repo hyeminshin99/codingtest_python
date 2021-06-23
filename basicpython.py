@@ -28,6 +28,10 @@ math.pi #3.1415926535897931
 
 
 ##### 튜플dict - key, value / items() ##########
+# 튜플 값 넣기
+dic={}
+dic['a']=100 #{'a':100}
+
 # key로 value찾기
 my = {'a':1, 'b':2}
 my['b'] #2 / 없으면 Error
@@ -67,3 +71,9 @@ print(list(map(func, dic)))  #[2, 4, 6]
 # print(dict(map(func, dic))) #오류:key만 넘겨지니까 dict로 변환못함.
 
 print(list(map(func, [dic[i] for i in dic]))) #i로는 key 들어오고, dict[i]가 value임!! #[200, 400, 600]
+
+
+#### input받기(feat.map함수) ####
+# #기본적으로 원소 str문자열로 받음
+A = list(input().split()) #['2', '3', '4', '5']
+A = list(map(int, input().split())) #[2, 3, 4, 5]
