@@ -28,6 +28,17 @@ math.pi #3.1415926535897931
 
 
 ##### 튜플dict - key, value / items() ##########
+# key로 value찾기
+my = {'a':1, 'b':2}
+my['b'] #2 / 없으면 Error
+my.get('b') #2 / 없으면 None / get(x, '디폴트 값')
+
+my.keys()   # dict_keys(['a', 'b'])
+my.values() # dict_values([1, 2])
+my.items()  # dict_items([('a', 1), ('b', 2)])
+
+'b' in my #True
+
 # value값으로 key찾기
 # 1. dict 뒤집기
 my_dict={2:200 , 3:300}
