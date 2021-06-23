@@ -50,3 +50,20 @@ print(new_dict[300]) #3
 for key, value in my_dict.items():
       if value == 300:
             print(key) #3
+
+
+##### map함수 (feat.튜플) ##########
+# map(func, iter) #func:iter에서 온 값들을 변환하는 함수 / iter에는 list or 튜플 들어감!!
+# map은 변환하는 거고, 출력하려면 앞에 출력시킬 타입써줘야됨. list(map(...))
+
+dic = {1:100, 2:200, 3:300}
+
+def func(x):
+  return x*2
+
+print(map(func, dic))  #<map object at 0x7f83e41823d0>
+print(list(map(func, dic)))  #[2, 4, 6]
+
+# print(dict(map(func, dic))) #오류:key만 넘겨지니까 dict로 변환못함.
+
+print(list(map(func, [dic[i] for i in dic]))) #i로는 key 들어오고, dict[i]가 value임!! #[200, 400, 600]
