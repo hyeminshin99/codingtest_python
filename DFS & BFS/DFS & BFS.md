@@ -16,8 +16,8 @@ list(Q) #리스트로 변경가능
 - 꼭 if문으로 종료조건 구현해주어야 함. 
 ***
 ## DFS(깊이우선탐색) - stack-재귀함수
-> Depth-First-Search
-> 가장 먼 노드까지 감
+> Depth-First-Search  
+> 가장 먼 노드까지 감  
 ```python
 # graph:인덱스번호노드에 따라 연결되있는 노드번호 : [ [],[1노드에 연결된 노드들], [2노드에 연결된 노드들], ... ]
 # v:현재노드 / visited:방문유무
@@ -33,8 +33,8 @@ visited = [False]*N
 dfs(graph, 1, visited)
 ```
 ## BFS(넒이우선탐색) - queue-큐자료구조deque()
-> Breadth-First-Search
-> 가장 가까운 노드먼저 
+> Breadth-First-Search  
+> 가장 가까운 노드먼저   
 ```python
 from collections import deque #큐사용(리스트)
 
