@@ -49,3 +49,14 @@ mlist = list(map(int, input().split())) #input().split()이 iter
 for m in mlist:
     if nlist[m] >= 1: print('yes ')
     else: print('no ')
+
+
+#### 집합set()-1개라도 있는지 기록하면되니까 ####
+N = int(input())
+nlist = set(map(int, input().split()))
+M = int(input())
+mlist = list(map(int, input().split()))
+
+for m in mlist:
+    if m in nlist: print('yes ')
+    else: print('no ')
