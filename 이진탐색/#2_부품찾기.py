@@ -35,3 +35,17 @@ for m in mlist:
     if result == None:
         print('no', end=' ')
     else: print('yes', end=' ')
+
+
+#### 계수정렬 ####
+N = int(input())
+nlist = [0]*1000001
+for i in input().split(): #input().split()도 iter !!
+    nlist[int(i)] = 1 #일반적으로 input받으면 str임! 잊지말기
+
+M = int(input())
+mlist = list(map(int, input().split())) #input().split()이 iter
+
+for m in mlist:
+    if nlist[m] >= 1: print('yes ')
+    else: print('no ')
