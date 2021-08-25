@@ -21,11 +21,11 @@ for i in range(1, G+1): gate[i] = i
 
 count = 0
 
-plane = list(input() for _ in range(P))
+plane = list(input() for _ in range(P)) #공간 낭비없이 바로
 plane = map(int, plane)
 
 for p in plane:
-    root = find_parent(gate, p)
+    root = find_parent(gate, p) #root = find_parent(gate, int(input()))
     if root == 0: break
     union_parent(gate, root, root-1)
     count += 1
