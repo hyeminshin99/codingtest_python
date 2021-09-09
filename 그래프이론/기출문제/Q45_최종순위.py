@@ -8,9 +8,13 @@ for _ in range(Testcase):
     n = int(input()) #팀갯수
     t = list(map(int, input().split())) #작년등수 1~n등 팀번호
 
-    parent = [0]*(n+1)
-    for i in range(2, n+1):
-        parent[i] = t[i-1]
+    indegree = [0]*(n+1)
+    graph = [[False]*(n+1) for _ in range(n+1)]
+    for i in range(n):
+        for j in range(i+1, n):
+            graph[t[i]][t[j]] = True
+
+
 
     m = int(input()) #등수바뀐 쌍
     for _ in range(m):

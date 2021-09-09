@@ -72,6 +72,8 @@ print(list(map(func, dic)))  #[2, 4, 6]
 
 print(list(map(func, [dic[i] for i in dic]))) #i로는 key 들어오고, dict[i]가 value임!! #[200, 400, 600]
 
+a=[1,2,3]
+a = list(map(lambda i: i-1), a) #a의 모든 원소들 1씩 빼기 ---lambda함수 쓰는법!
 
 #### input받기(feat.map함수) ####
 # #기본적으로 원소 str문자열로 받음
