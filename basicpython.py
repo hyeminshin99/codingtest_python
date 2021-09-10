@@ -1,3 +1,4 @@
+# vs 여러줄주석 Ctrl+K+C
 # 아스키코드
 ord('A') #65 #문자를 숫자로
 chr(65) #A #숫자를 문자로
@@ -34,7 +35,7 @@ dic['a']=100 #{'a':100}
 
 # key로 value찾기
 my = {'a':1, 'b':2}
-my['b'] #2 / 없으면 Error
+my['b'] #2 / 없으면 Error  ##dict(a) 가 아니라 dict[a] 임!
 my.get('b') #2 / 없으면 None / get(x, '디폴트 값')
 
 my.keys()   # dict_keys(['a', 'b'])

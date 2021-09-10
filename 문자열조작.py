@@ -44,7 +44,7 @@ print(text.rfind('o'))  #8 #두번째o 인덱스8  ##오른쪽부터 찾음
 text = 'Hello, World!'
 print(text.count('o'))  #2
 
-# .upper  .lower  : 대문자, 소문자로 변환
+# .upper()  .lower()  : 대문자, 소문자로 변환
 
 
 #--------------------------------------------------#
@@ -82,6 +82,22 @@ from collections import Counter
 print(Counter('hello world'))  #Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 
 #--------------------------------------------------#
+# 정규표현식 re 사용!
+# re.sub('패턴', '바꿀문자열/교체함수', 'iter문자열', 바꿀횟수)
+import re
+re.sub('a|b', 'f', 'abcdaegbb') #a또는b를 f로 바꿔라
+re.sub('[0-9]+', 'n', '120 12 F4BF78') #0-9그이상 숫자들 다 찾아서 n으로 바꿔라 #n n FnBFn
+re.sub('[0-9]+', lambda i: str(int(i.group()))*2, '120 12 F4BF78') #120120 1212 F44BF7878
+
+re.sub('[^a-z\d\-\_\.]', '', text) #^ 제외하고 지워라
+re.sub('^\.|\.$', '', text) #양끝의 . 제거 == text.strip('.')
+re.sub('\.\.+', '.', text) #\.\. : .이 2개 이상인거 .한개로 바꿔라
+re.sub('aa+', 'a', text) #a가 2개이상이면 a로 바꿔라
+
+re.sub('([a-z]+) ([0-9]+)', '\\2 \\1 \\2 \\1', 'hello 1234') #1234 hello 1234 hello # 그룹 2, 1, 2, 1 순으로
+
+
+#--------------------------------------------------#
 # 리스트 문자열
 # list[ 시작값:끝값:step ]
 
@@ -94,3 +110,4 @@ print(Counter('hello world'))  #Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1,
 # list.sort(key = ) : key값 기준으로 정렬
 
 # list.reverse() : 값을 역순으로 정렬
+
