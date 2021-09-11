@@ -56,6 +56,9 @@ for key, value in my_dict.items():
       if value == 300:
             print(key) #3
 
+# dict sort()
+res = sorted(list.items(), key=(lambda x: x[1]), reverse=True)
+
 
 ##### map함수 (feat.튜플) ##########
 # map(func, iter) #func:iter에서 온 값들을 변환하는 함수 / iter에는 list or 튜플 들어감!!
