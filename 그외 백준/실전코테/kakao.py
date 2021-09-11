@@ -36,3 +36,8 @@ dijkstra(K)
 
 for i in range(1, V+1):
   print("INF" if distance[i]==INF else distance[i])
+
+
+#21-9-11
+# 7문제중 3문제 풀었음
+# 2번째 문제: 진수변환 + 소수찾기 :에라토스테네스의 체로 했지만, 런타임넘어간거 2개있었음..
