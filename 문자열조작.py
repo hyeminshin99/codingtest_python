@@ -23,8 +23,8 @@ text = "Hello, World!"
 T = str.maketrans('HWd', '123')
 print(text.translate(T)) #1ello, 2orl3!
 
-# .just(길이) .center() : 정렬/ just는 문자를 가운데로 정렬, ljust는 왼쪽으로, rjust는 오른쪽으로
-#                                 남는곳은 공백으로 / '길이'가 짧으면 정렬x
+# .just(길이) .center(길이, '추가할문자') : 정렬/ just는 문자를 가운데로 정렬, ljust는 왼쪽으로, rjust는 오른쪽으로
+#                                           남는곳은 공백으로 / '길이'가 짧으면 정렬x
 text = 'abcdefg' #7개
 print(text.ljust(10)) #abcdefg   
 print(text.rjust(10)) #   abcdefg
